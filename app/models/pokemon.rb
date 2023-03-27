@@ -15,21 +15,21 @@
 #
 class Pokemon < ApplicationRecord
     TYPES = [
-        'fire'
-        'electric'
-        'normal'
-        'ghost'
-        'psychic'
-        'water'
-        'bug'
-        'dragon'
-        'grass'
-        'fighting'
-        'ice'
-        'flying'
-        'poison'
-        'ground'
-        'rock'
+        'fire',
+        'electric',
+        'normal',
+        'ghost',
+        'psychic',
+        'water',
+        'bug',
+        'dragon',
+        'grass',
+        'fighting',
+        'ice',
+        'flying',
+        'poison',
+        'ground',
+        'rock',
         'steel'
     ].sort.freeze
 

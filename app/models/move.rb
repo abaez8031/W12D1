@@ -10,4 +10,11 @@
 class Move < ApplicationRecord
     validates :name, length: { maximum: 255 }, uniqueness: { message: "'%{value}' is already in use"}
 
+    has_many :poke_moves,
+        primary_key: :id,
+        foreign_key: :move_id,
+        class_name: :PokeMove
+
+    has_many :pokemon,
+        through: :poke_moves 
 end
