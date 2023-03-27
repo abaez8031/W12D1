@@ -14,4 +14,10 @@
 class Item < ApplicationRecord
     validates :name, length: { maximum: 255 }
     validates :price, numericality: { minimum: 0 }
+    
+    belongs_to :pokemon,
+    primary_key: :id,
+    foreign_key: :pokemon_id,
+    class_name: :Pokemon
+
 end
